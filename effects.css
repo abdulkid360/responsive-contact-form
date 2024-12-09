@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Karia';
+    src: url('/assets/fonts/Karla-Italic-VariableFont_wght.ttf');
+}
+
+:root{
+    --green-primary1: hsl(148, 38%, 91%);
+    --green-primary2: hsl(169, 82%, 27%);
+    --red-primary: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --gray1: hsl(186, 15%, 59%);
+    --gray2: hsl(187, 24%, 22%);
+    --label-size: 16px;
+}
+
+.error{
+    color: var(--red-primary);
+    display: none;
+}
+
+.inner-container input:focus, textarea:focus{
+    border-color: var(--green-primary2);
+}
+
+
+
+/* .active{
+    background: var(--green-primary1);
+} */
+/* .radio-label::after{
+    background: var(--green-primary1);
+} */

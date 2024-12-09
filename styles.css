@@ -1,0 +1,214 @@
+/* .karla-uniquifier {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: ;
+  font-style: normal;
+} */
+
+:root {
+    --green-primary1: hsl(148, 38%, 91%);
+    --green-primary2: hsl(169, 82%, 27%);
+    --red-primary: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --gray1: hsl(186, 15%, 59%);
+    --gray2: hsl(187, 24%, 22%);
+    --label-size: 16px;
+}
+
+body {
+    background-color: var(--green-primary1);
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+button {
+    background-color: var(--green-primary2) !important;
+    border: 1px solid var(--green-primary2) !important;
+    outline-color: var(--green-primary2) !important;
+    font-size: 13px !important;
+    padding: 10px !important;
+}
+
+.text-input {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid var(--gray1);
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--gray2);
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+.text-input:focus {
+    border-color: var(--green-primary2);
+}
+
+label {
+    font-size: var(--label-size);
+}
+
+.error {
+    font-size: 12px;
+    color: var(--red-primary) !important;
+    display: none;
+}
+
+.hidden-radio {
+    appearance: none !important;
+    position: absolute !important;
+}
+
+.radio-label {
+    display: block;
+    border: 1px solid var(--gray1);
+    padding-left: 57px !important;
+    cursor: pointer;
+    /* Makes the label look clickable */
+}
+
+.radio-check {
+    background-color: var(--green-primary1);
+    border-color: var(--green-primary2);
+    /* Change the background of the label when radio is checked */
+}
+
+
+.radio-image {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 30px;
+    display: none;
+    /* If you want to show the SVG, remove this line */
+    cursor: pointer;
+}
+
+.custom-radio {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--gray1);
+    border-radius: 50%;
+    margin-top: 12px;
+    margin-left: 30px;
+    display: inline-block;
+    /* Ensure this is displayed to see the radio effect */
+    cursor: pointer;
+}
+
+.error-border {
+    border: 1px solid var(--red-primary);
+}
+
+input[type="checkbox"] {
+    appearance: none !important;
+}
+
+.custom-check {
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--gray1);
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+
+.star {
+    color: var(--green-primary2);
+}
+
+
+.check-image {
+    display: none;
+    margin-top: 13px;
+}
+
+.agree-label {
+    /* border: 1px solid; */
+    width: 80%;
+    margin-left: 10px !important;
+    font-size: 13.5px;
+    cursor: pointer;
+}
+
+.check-container {
+    display: flex;
+    padding: 0;
+}
+
+/* Custom alert styles */
+.custom-alert {
+    background-color: hsl(169, 82%, 10%);
+    padding: 0px 12px !important;
+    color: var(--white);
+    border-radius: 10px;
+    width: fit-content;
+    position: relative;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    display: none;
+}
+
+.show-alert {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+h4 {
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.alert-body {
+    font-size: 12px;
+    font-weight: 250;
+    padding: 0px;
+}
+
+.alert-title {
+    padding: 7px 0px;
+    padding-top: 13px;
+}
+
+.custom-custom {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.query-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 374px) {
+    .custom-check {
+        margin-top: 3.3px;
+    }
+
+    .check-image {
+        margin-top: 3.3px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .query {
+        margin-bottom: 0px !important;
+    }
+}
